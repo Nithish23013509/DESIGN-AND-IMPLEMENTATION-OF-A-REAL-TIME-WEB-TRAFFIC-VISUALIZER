@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Visualizer</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- D3 -->
+    <script src="d3.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="main-container">
+
+    <!-- LEFT PANEL – LIVE STREAM -->
+    <div id="left-panel">
+        <h2 class="panel-title">LIVE STREAM</h2>
+        <div id="live-stream" class="scroll-box"></div>
+
+        <div id="stats-box">
+            <div class="stat-line">Active Requests: <span id="active-count"></span></div>
+            <div class="stat-line clickable">First-Party: <span id="fp-count"></span></div>
+            <div class="stat-line clickable">Third-Party: <span id="tp-count"></span></div>
+        </div>
+    </div>
+
+    <!-- CENTER PANEL – DONUT CHART + RECENT REQUESTS -->
+    <div id="center-panel">
+
+        <h2 class="panel-title">NETWORK VISUALIZER</h2>
+
+        <div id="chart-container">
+            <svg width="420" height="420"></svg>
+            <div id="legend"></div>
+        </div>
+
+        <h3 class="sub-title">Recent Requests</h3>
+        <div id="recent-requests" class="scroll-box"></div>
+    </div>
+
+    <!-- RIGHT PANEL – TOP DOMAINS + LATENCY + BANDWIDTH -->
+    <div id="right-panel">
+        <div id="control-buttons">
+            <button id="startBtn" class="btn-primary">START</button>
+            <button id="stopBtn" class="btn-danger">STOP</button>
+            <span id="status">Status: Inactive</span>
+        </div>
+
+        <h3 class="sub-title">Top Domains</h3>
+        <div id="top-domains" class="scroll-box"></div>
+
+        <h3 class="sub-title">Latency</h3>
+        <div id="latency-stats" class="stat-value">—</div>
+
+        <h3 class="sub-title">Bandwidth</h3>
+        <div id="bandwidth-stats" class="stat-value">—</div>
+    </div>
+</div>
+
+
+<!-- ============================================================= -->
+<!-- CATEGORY MODAL -->
+<!-- ============================================================= -->
+<div id="category-modal" class="cp-modal">
+    <div class="cp-modal-content">
+
+        <span id="category-close" class="modal-close">&times;</span>
+        <h2 id="category-title">Domains</h2>
+
+        <div id="category-domain-list" class="modal-list"></div>
+
+    </div>
+</div>
+
+<!-- ============================================================= -->
+<!-- REQUEST DETAILS MODAL -->
+<!-- ============================================================= -->
+<div id="request-modal" class="cp-modal">
+    <div class="cp-modal-content large">
+
+        <span id="request-close" class="modal-close">&times;</span>
+        <h2 id="request-domain-title"></h2>
+
+        <div id="tracker-status"></div>
+        <hr class="cp-divider">
+
+        <div id="request-details" class="modal-list"></div>
+
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

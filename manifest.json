@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Cyberpunk Network Visualizer",
+    "version": "3.0",
+    "description": "Real-time network traffic visualizer using Chrome DevTools Protocol.",
+    "permissions": ["debugger","tabs","storage","activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "background": {"service_worker": "background.js","type": "module"},
+    "action": {"default_popup": "popup.html"},
+    "minimum_chrome_version": "104"
+}
