@@ -29,7 +29,10 @@ User-friendly cyberpunk-style dashboard interface
 
 Client-side processing ensuring privacy preservation
 
+
+
 🛠️ Requirements
+
 Software Requirements
 
 Operating System: Windows 10 / Linux / macOS (64-bit)
@@ -52,6 +55,8 @@ Minimum 4 GB RAM
 
 Standard laptop or desktop system
 
+
+
 🏗️ System Architecture
 
 The system follows a client-side, event-driven architecture:
@@ -69,9 +74,12 @@ D3.js visualizes traffic in real time
 img/Architecture.jpg
 
 📊 Output
+
 🔹 Output 1 – Live Network Traffic Stream
+
 ![alt text](<img/OUTPUT 1.png>)
 Displays real-time network requests including domain, HTTP method, status, size, and latency.
+
 
 🔹 Output 2 – Interactive Donut Chart
 
@@ -90,10 +98,14 @@ Video Content
 Other
 
 Clicking a chart segment opens domain-level details.
+
 ![alt text](<img/OUTPUT 3.png>)
 
+
 🔹 Output 3 – Third-Party Domain Analysis
+
 ![alt text](<img/OUTPUT 2.png>)
+
 Shows all third-party domains involved in background communication along with request counts.
 
 📈 Results and Impact
