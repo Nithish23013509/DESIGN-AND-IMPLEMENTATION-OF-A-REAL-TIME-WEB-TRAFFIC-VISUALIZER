@@ -1,59 +1,138 @@
-## Title of the Project
-Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
-
-## About
-<!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
-
-## Features
-<!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
-
-## Requirements
-<!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
-
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
-
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+🌐 Real-Time Website Traffic Visualizer
 
 
-## Output
+The Real-Time Website Traffic Visualizer is a browser-based system designed to monitor, analyze, and visualize website network traffic in real time. The project provides transparent insights into first-party and third-party connections, helping users understand background web activity related to performance, privacy, and security.
 
-<!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+📖 About
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
+The Real-Time Website Traffic Visualizer is a Chrome extension–based project that captures live network requests generated when a user visits a website. Modern websites interact with multiple background services such as analytics platforms, advertising networks, content delivery networks (CDNs), and external APIs. These interactions are often hidden from users and can impact privacy, security, and website performance.
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+This project aims to bridge that gap by providing a real-time, interactive dashboard that visualizes website traffic in an easy-to-understand format. The system captures HTTP/HTTPS requests using browser debugging APIs and displays them through live streams, donut charts, and detailed modals. Both technical and non-technical users can benefit from this transparency-driven solution.
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+✨ Features
 
+Real-time capture of website network requests
 
-## Results and Impact
-<!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Live traffic stream showing ongoing requests
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+Classification of traffic into First-Party and Third-Party domains
 
-## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+Interactive donut chart visualization of traffic categories
 
+Clickable chart segments to view domain-wise details
 
+Detailed request inspection (URL, method, status, type, latency, size)
 
+Identification of known trackers and advertisers
+
+User-friendly cyberpunk-style dashboard interface
+
+Client-side processing ensuring privacy preservation
+
+🛠️ Requirements
+Software Requirements
+
+Operating System: Windows 10 / Linux / macOS (64-bit)
+
+Browser: Google Chrome (latest version recommended)
+
+Programming Languages: JavaScript, HTML, CSS
+
+Libraries: D3.js (local copy for visualization)
+
+APIs: Chrome Debugger API, Chrome Extension APIs
+
+IDE: Visual Studio Code
+
+Version Control: Git & GitHub
+
+Hardware Requirements
+
+Minimum 4 GB RAM
+
+Standard laptop or desktop system
+
+🏗️ System Architecture
+
+The system follows a client-side, event-driven architecture:
+
+User opens a website in the browser
+
+Chrome Debugger API captures network requests
+
+Background service worker processes request data
+
+Dashboard receives data via message passing
+
+D3.js visualizes traffic in real time
+
+img/Architecture.jpg
+
+📊 Output
+🔹 Output 1 – Live Network Traffic Stream
+![alt text](<img/OUTPUT 1.png>)
+Displays real-time network requests including domain, HTTP method, status, size, and latency.
+
+🔹 Output 2 – Interactive Donut Chart
+
+Visual representation of traffic categories such as:
+
+Advertising
+
+Analytics
+
+CDN
+
+Image Content
+
+Video Content
+
+Other
+
+Clicking a chart segment opens domain-level details.
+![alt text](<img/OUTPUT 3.png>)
+
+🔹 Output 3 – Third-Party Domain Analysis
+![alt text](<img/OUTPUT 2.png>)
+Shows all third-party domains involved in background communication along with request counts.
+
+📈 Results and Impact
+
+The Real-Time Website Traffic Visualizer improves transparency in web browsing by exposing hidden network behavior. It helps users understand how many third-party services are involved when accessing a website and what type of data exchange occurs.
+
+The project is beneficial for:
+
+Developers optimizing website performance
+
+Cybersecurity analysts monitoring suspicious activity
+
+Students learning web networking concepts
+
+Privacy-conscious users seeking transparency
+
+The system promotes awareness of privacy risks and enables informed decision-making regarding website usage.
+
+🚀 Future Enhancements
+
+AI-based tracker and threat detection
+
+Historical traffic analysis and reporting
+
+Exportable audit reports
+
+Enterprise-level dashboards
+
+Cross-browser support (Firefox, Edge)
+
+Performance benchmarking metrics
+
+📚 Articles Published / References
+
+Google Chrome Developers – Chrome Debugger API Documentation
+
+Mike Bostock, “D3.js – Data-Driven Documents”
+
+OWASP Foundation – Web Security and Privacy Guidelines
+
+RFC 2616 – Hypertext Transfer Protocol (HTTP/1.1)
 
